@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(17, 83, 139, 0.16), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgba(204, 181, 112, 0.1), transparent 24%),
+    #050505;
+}
+
+@layer utilities {
+  .container-goat {
+    @apply mx-auto max-w-7xl px-6;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur;
+  }
+
+  .section-pad {
+    @apply py-16 md:py-20;
+  }
+}
